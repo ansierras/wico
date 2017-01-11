@@ -32,5 +32,6 @@ angular.module('wicoApp.login', ['ui.router'])
 }])
 .controller('login_contentCtrl', ['$scope','$state','$rootScope', function($scope, $state, $rootScope) {
 	$scope.claseCont = 'col-md-12'	
+	var whatever;
 }])
 
