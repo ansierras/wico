@@ -1,3 +1,17 @@
 .side-hidden {
 	visibility: hidden
 };
+
+.width-30{
+	width:30%;
+}
+
+.contenedor-form{
+	border-style: solid;
+	border-color: #ddd;
+	border-width:0px 1px 1px 1px;
+}
+
+.mi-container{
+	padding: 20px;
+}

@@ -1,0 +1,109 @@
+<div class="container" style="width: 60%">
+	<div class="row">
+		<h1>{{titulo}}</h1>
+	</div>
+	<div class="row">
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="#general">Información General</a></li>
+			<li role="presentation"><a href="#habilidades">Habilidades e intereses</a></li>
+		</ul>
+		<div class="tab-content contenedor-form mi-container">
+			<div role="tabpanel" class="tab-pane active" id="general">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="https://robohash.org/wico">
+					</div>
+					<div class="col-md-8">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Empresa">
+						</div>
+						<div class="form-group">
+							<input type="number" class="form-control" placeholder="Telefono">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Cédula">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<textarea class="form-control" rows="3" placeholder="Descripción"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<div class="input-group ">
+						  	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-behance fa-lg"></i></span>
+						  	<input type="text" class="form-control" placeholder="Behance" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group ">
+						  	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-linkedin fa-lg"></i></span>
+						  	<input type="text" class="form-control" placeholder="Linked in" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group ">
+						  	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-instagram fa-lg"></i></span>
+						  	<input type="text" class="form-control" placeholder="Instagram" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group ">
+						  	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-facebook fa-lg"></i></span>
+						  	<input type="text" class="form-control" placeholder="Facebook" aria-describedby="basic-addon1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="habilidades">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Mis servicios PRO</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search for..." ng-model="nuevoServicio">
+										<span class="input-group-btn">
+										<button class="btn btn-default" type="button" ng-click="agregar('servicio')"><i class="fa fa-plus fa-lg"></i></button>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<span class="badge" ng-repeat="servicio in servicios">{{servicio}}</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Mis Intereses</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Mis Habilidades</h3>
+							</div>
+							<div class="panel-body">
+								Panel content
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-default">{{textoBoton}}</button>
+	</div>
+</div>

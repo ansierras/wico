@@ -5,7 +5,8 @@ var wicoApp = angular.module('wicoApp', [
     //'angular-media-preview',
     'wicoApp.home',
     'wicoApp.login',
-    'wicoApp.register']);
+    'wicoApp.register',
+    'wicoApp.editProf']);
 
 wicoApp.config(function($stateProvider, $urlRouterProvider) {
     
