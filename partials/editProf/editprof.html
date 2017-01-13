@@ -99,7 +99,21 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Mi disponibilidad semanal</h3>
+							</div>
+							<div class="panel-body">
+								<div class="input-group">
+									<div class="input-group-btn">
+										<button class="btn btn-default" type="button" ng-click="cambiarHoras(-1)"><i class="fa fa-minus fa-lg"></i></button>
+										<button class="btn btn-default" type="button" ng-click="cambiarHoras(1)"><i class="fa fa-plus fa-lg"></i></button>
+									</div>
+									<input type="number" class="form-control" ng-model="disponibilidad">
+									<span class="input-group-addon">horas semanales</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

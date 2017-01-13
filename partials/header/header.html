@@ -1,5 +1,9 @@
 <nav class="navbar navbar-default">
-  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <button type="button" class="btn btn-default navbar-btn navbar-left" >Proyectos</button>
+    <button type="button" class="btn btn-default navbar-btn navbar-left" >Usuarios</button>
+    <button type="button" class="btn btn-default navbar-btn navbar-left" ng-show="loggedIn" >Crear Proyecto</button>
+  </div>
   <div class="col-md-4">
     <div class="container-fluid">
       <div class="navbar-header ">
@@ -9,7 +13,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <button type="button" class="btn btn-default navbar-btn navbar-right">{{accionTxt}}</button>
+  <div class="col-md-4" ng-show="accionTxt">
+    <button type="button" class="btn btn-default navbar-btn navbar-right" >{{accionTxt}}</button>
   </div> 
 </nav>

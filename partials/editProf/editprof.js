@@ -32,10 +32,11 @@ angular.module('wicoApp.editProf', ['ui.router'])
 	$scope.claseSide = 'side-hidden'	
 }])
 .controller('editProf_contentCtrl', ['$scope','$state','$rootScope', function($scope, $state, $rootScope) {
+	$scope.loggedIn = true;
 	$scope.claseCont = 'col-md-12'	
-	$scope.accionTxt = "Registrarme"
 	$scope.titulo = "Crear Perfil"
 	$scope.textoBoton = "Crear"
+	$scope.disponibilidad = 5;
 	$scope.servicios = [];
 	$('.nav-tabs li a').click(function (e) {
 	  	e.preventDefault()
@@ -43,12 +44,19 @@ angular.module('wicoApp.editProf', ['ui.router'])
 	})
 
 	$scope.agregar = function(tipo){
-		console.log("hola")
+		console.log($scope.servicios)
 		switch(tipo){
 			case "servicio":
 				$scope.servicios.push($scope.nuevoServicio);
 				break;
 		}
+	}
+	$scope.cambiarHoras = function(cantidad){
+		var resultado = $scope.disponibilidad + cantidad
+		if (resultado > -1 && resultado<21) {
+			$scope.disponibilidad = resultado
+		};
+		
 	}
 
 }])
